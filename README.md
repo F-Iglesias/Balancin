@@ -27,11 +27,20 @@ You can see a video of the robot moving [here](https://www.youtube.com/watch?v=W
 
 <img width="700" height="581" alt="20231206_214845" src="https://github.com/user-attachments/assets/edabb48d-b337-4150-86ed-1e74f274a5fc" />
 
-For this prototype I designed a simpler encoder but, since it was not able to read the direction in which the wheels rotated, it was useless for its purpose, so I discarded that design.
+[Here](https://youtube.com/shorts/iVz-gH_mcks?feature=share) is a video.
+
+For this prototype I designed a simpler encoder, but since it was not able to read the direction in which the wheels rotated, it was useless for its purpose, so I discarded that design.
 
 <img width="615" height="424" alt="Captura encoder v1" src="https://github.com/user-attachments/assets/10ea82fc-5a6b-4135-9fab-80b14149ce7c" />
 
 
 ## First prototype
+
+Sadly I lost all the photos I had, but here are two videos:
+
+[Video 1](https://youtube.com/shorts/Z38a0RHIttk?feature=share)
+
+[Video 2](https://youtube.com/shorts/8MTNevPrN3k?feature=share) 
+
 
 
