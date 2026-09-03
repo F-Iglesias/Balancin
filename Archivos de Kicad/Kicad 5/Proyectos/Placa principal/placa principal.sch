@@ -1,0 +1,760 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Linear:LM7805_TO220 U3
+U 1 1 65D3EF21
+P 5050 1900
+F 0 "U3" H 5050 2142 50  0000 C CNN
+F 1 "LM7805_TO220" H 5050 2051 50  0000 C CNN
+F 2 "PlacaPrincipal:TO-220-3_Vertical" H 5050 2125 50  0001 C CIN
+F 3 "https://www.onsemi.cn/PowerSolutions/document/MC7800-D.PDF" H 5050 1850 50  0001 C CNN
+	1    5050 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L placa-principal-rescue:L9110S-L9110S-placa-principal-rescue U4
+U 1 1 65D4449E
+P 8200 3250
+F 0 "U4" H 8200 3817 50  0000 C CNN
+F 1 "L9110S" H 8200 3726 50  0000 C CNN
+F 2 "PlacaPrincipal:L9110s" H 8200 3250 50  0001 L BNN
+F 3 "" H 8200 3250 50  0001 L BNN
+F 4 "ON Semiconductor" H 8200 3250 50  0001 L BNN "MF"
+F 5 "1.7272mm" H 8200 3250 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 6 "None" H 8200 3250 50  0001 L BNN "Package"
+F 7 "None" H 8200 3250 50  0001 L BNN "Price"
+F 8 "https://www.snapeda.com/parts/L9110S/Onsemi/view-part/?ref=eda" H 8200 3250 50  0001 L BNN "Check_prices"
+F 9 "IPC-7351B" H 8200 3250 50  0001 L BNN "STANDARD"
+F 10 "NA" H 8200 3250 50  0001 L BNN "PARTREV"
+F 11 "https://www.snapeda.com/parts/L9110S/Onsemi/view-part/?ref=snap" H 8200 3250 50  0001 L BNN "SnapEDA_Link"
+F 12 "L9110S" H 8200 3250 50  0001 L BNN "MP"
+F 13 "\\nSOP-8 MOTOR DRIVER ICS ROHS\\n" H 8200 3250 50  0001 L BNN "Description"
+F 14 "Not in stock" H 8200 3250 50  0001 L BNN "Availability"
+F 15 "UMW" H 8200 3250 50  0001 L BNN "MANUFACTURER"
+	1    8200 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x08_Male J2
+U 1 1 65D45A36
+P 2150 3300
+F 0 "J2" H 2258 3781 50  0000 C CNN
+F 1 "MPU6050" H 2258 3690 50  0000 C CNN
+F 2 "PlacaPrincipal:MPU6050" H 2150 3300 50  0001 C CNN
+F 3 "~" H 2150 3300 50  0001 C CNN
+	1    2150 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:LM7805_TO220 U1
+U 1 1 65D478F3
+P 3850 1900
+F 0 "U1" H 3850 2142 50  0000 C CNN
+F 1 "step-down" H 3850 2051 50  0000 C CNN
+F 2 "PlacaPrincipal:XL4005_Module" H 3850 2125 50  0001 C CIN
+F 3 "https://www.onsemi.cn/PowerSolutions/document/MC7800-D.PDF" H 3850 1850 50  0001 C CNN
+	1    3850 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:BAT85 D1
+U 1 1 65D4A785
+P 3250 1900
+F 0 "D1" H 3250 1683 50  0000 C CNN
+F 1 "BAT85" H 3250 1774 50  0000 C CNN
+F 2 "PlacaPrincipal:BAT85" H 3250 1725 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAT85.pdf" H 3250 1900 50  0001 C CNN
+	1    3250 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J4
+U 1 1 65D4B66B
+P 2750 1900
+F 0 "J4" H 2858 2081 50  0000 C CNN
+F 1 "Battery" H 2858 1990 50  0000 C CNN
+F 2 "PlacaPrincipal:Bornera(5,08mm)" H 2750 1900 50  0001 C CNN
+F 3 "~" H 2750 1900 50  0001 C CNN
+	1    2750 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 1900 3050 1900
+Wire Wire Line
+	3850 2200 3850 2300
+Wire Wire Line
+	3850 2300 3050 2300
+Wire Wire Line
+	3050 2300 3050 2000
+Wire Wire Line
+	3050 2000 2950 2000
+$Comp
+L power:GND #PWR0101
+U 1 1 65D4CB08
+P 3850 2350
+F 0 "#PWR0101" H 3850 2100 50  0001 C CNN
+F 1 "GND" H 3855 2177 50  0000 C CNN
+F 2 "" H 3850 2350 50  0001 C CNN
+F 3 "" H 3850 2350 50  0001 C CNN
+	1    3850 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 2350 5050 2200
+$Comp
+L power:GND #PWR0102
+U 1 1 65D4CE52
+P 5050 2350
+F 0 "#PWR0102" H 5050 2100 50  0001 C CNN
+F 1 "GND" H 5055 2177 50  0000 C CNN
+F 2 "" H 5050 2350 50  0001 C CNN
+F 3 "" H 5050 2350 50  0001 C CNN
+	1    5050 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L placa-principal-rescue:L9110S-L9110S-placa-principal-rescue U5
+U 1 1 65D4DEB6
+P 8200 4250
+F 0 "U5" H 8200 4817 50  0000 C CNN
+F 1 "L9110S" H 8200 4726 50  0000 C CNN
+F 2 "PlacaPrincipal:L9110s" H 8200 4250 50  0001 L BNN
+F 3 "" H 8200 4250 50  0001 L BNN
+F 4 "ON Semiconductor" H 8200 4250 50  0001 L BNN "MF"
+F 5 "1.7272mm" H 8200 4250 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 6 "None" H 8200 4250 50  0001 L BNN "Package"
+F 7 "None" H 8200 4250 50  0001 L BNN "Price"
+F 8 "https://www.snapeda.com/parts/L9110S/Onsemi/view-part/?ref=eda" H 8200 4250 50  0001 L BNN "Check_prices"
+F 9 "IPC-7351B" H 8200 4250 50  0001 L BNN "STANDARD"
+F 10 "NA" H 8200 4250 50  0001 L BNN "PARTREV"
+F 11 "https://www.snapeda.com/parts/L9110S/Onsemi/view-part/?ref=snap" H 8200 4250 50  0001 L BNN "SnapEDA_Link"
+F 12 "L9110S" H 8200 4250 50  0001 L BNN "MP"
+F 13 "\\nSOP-8 MOTOR DRIVER ICS ROHS\\n" H 8200 4250 50  0001 L BNN "Description"
+F 14 "Not in stock" H 8200 4250 50  0001 L BNN "Availability"
+F 15 "UMW" H 8200 4250 50  0001 L BNN "MANUFACTURER"
+	1    8200 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 65D4EC5B
+P 9450 3200
+F 0 "C1" H 9565 3246 50  0000 L CNN
+F 1 "0.1uF" H 9565 3155 50  0000 L CNN
+F 2 "PlacaPrincipal:C_0805_HandSolder" H 9488 3050 50  0001 C CNN
+F 3 "~" H 9450 3200 50  0001 C CNN
+	1    9450 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 65D4F767
+P 9450 4200
+F 0 "C2" H 9565 4246 50  0000 L CNN
+F 1 "0.1uF" H 9565 4155 50  0000 L CNN
+F 2 "PlacaPrincipal:C_0805_HandSolder" H 9488 4050 50  0001 C CNN
+F 3 "~" H 9450 4200 50  0001 C CNN
+	1    9450 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J6
+U 1 1 65D502E9
+P 10100 3150
+F 0 "J6" H 10072 3032 50  0000 R CNN
+F 1 "Motor 1" H 10072 3123 50  0000 R CNN
+F 2 "PlacaPrincipal:Bornera(5,08mm)" H 10100 3150 50  0001 C CNN
+F 3 "~" H 10100 3150 50  0001 C CNN
+	1    10100 3150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 65D536C1
+P 8800 4750
+F 0 "#PWR0103" H 8800 4500 50  0001 C CNN
+F 1 "GND" H 8805 4577 50  0000 C CNN
+F 2 "" H 8800 4750 50  0001 C CNN
+F 3 "" H 8800 4750 50  0001 C CNN
+	1    8800 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 3450 8800 3450
+Wire Wire Line
+	8800 3450 8800 4450
+Wire Wire Line
+	8700 4450 8800 4450
+Connection ~ 8800 4450
+Wire Wire Line
+	8800 4450 8800 4750
+Text GLabel 9050 2500 1    50   Input ~ 0
+Vmotor
+Wire Wire Line
+	8700 3950 9050 3950
+Wire Wire Line
+	9050 3950 9050 2950
+Wire Wire Line
+	8700 2950 9050 2950
+Connection ~ 9050 2950
+Wire Wire Line
+	9050 2950 9050 2500
+Wire Wire Line
+	8700 3150 9200 3150
+Wire Wire Line
+	8700 3250 9200 3250
+Wire Wire Line
+	9200 3250 9200 3400
+Wire Wire Line
+	9200 3400 9450 3400
+Wire Wire Line
+	9200 3150 9200 3000
+Wire Wire Line
+	9200 3000 9450 3000
+Wire Wire Line
+	9450 3050 9450 3000
+Wire Wire Line
+	9450 3350 9450 3400
+Wire Wire Line
+	9450 3000 9700 3000
+Wire Wire Line
+	9700 3000 9700 3150
+Wire Wire Line
+	9700 3150 9900 3150
+Connection ~ 9450 3000
+Wire Wire Line
+	9450 3400 9700 3400
+Wire Wire Line
+	9700 3400 9700 3250
+Wire Wire Line
+	9700 3250 9900 3250
+Connection ~ 9450 3400
+Wire Wire Line
+	8700 4150 9200 4150
+Wire Wire Line
+	9200 4150 9200 4000
+Wire Wire Line
+	9200 4000 9450 4000
+Wire Wire Line
+	9700 4000 9700 4150
+Wire Wire Line
+	9700 4150 9900 4150
+Wire Wire Line
+	8700 4250 9200 4250
+Wire Wire Line
+	9200 4250 9200 4400
+Wire Wire Line
+	9200 4400 9450 4400
+Wire Wire Line
+	9700 4400 9700 4250
+Wire Wire Line
+	9700 4250 9900 4250
+Wire Wire Line
+	9450 4050 9450 4000
+Connection ~ 9450 4000
+Wire Wire Line
+	9450 4000 9700 4000
+Wire Wire Line
+	9450 4350 9450 4400
+Connection ~ 9450 4400
+Wire Wire Line
+	9450 4400 9700 4400
+$Comp
+L Device:R_US R4
+U 1 1 65D5A260
+P 7300 4350
+F 0 "R4" V 7095 4350 50  0000 C CNN
+F 1 "10K" V 7186 4350 50  0000 C CNN
+F 2 "PlacaPrincipal:R_0805_HandSolder" V 7340 4340 50  0001 C CNN
+F 3 "~" H 7300 4350 50  0001 C CNN
+	1    7300 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R3
+U 1 1 65D5AEE8
+P 7300 4050
+F 0 "R3" V 7095 4050 50  0000 C CNN
+F 1 "10K" V 7186 4050 50  0000 C CNN
+F 2 "PlacaPrincipal:R_0805_HandSolder" V 7340 4040 50  0001 C CNN
+F 3 "~" H 7300 4050 50  0001 C CNN
+	1    7300 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 65D5B494
+P 7300 3350
+F 0 "R2" V 7095 3350 50  0000 C CNN
+F 1 "10K" V 7186 3350 50  0000 C CNN
+F 2 "PlacaPrincipal:R_0805_HandSolder" V 7340 3340 50  0001 C CNN
+F 3 "~" H 7300 3350 50  0001 C CNN
+	1    7300 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 65D5BA70
+P 7300 3050
+F 0 "R1" V 7095 3050 50  0000 C CNN
+F 1 "10K" V 7186 3050 50  0000 C CNN
+F 2 "PlacaPrincipal:R_0805_HandSolder" V 7340 3040 50  0001 C CNN
+F 3 "~" H 7300 3050 50  0001 C CNN
+	1    7300 3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7700 4150 7700 4050
+Wire Wire Line
+	7700 4050 7450 4050
+Wire Wire Line
+	7450 4350 7700 4350
+Wire Wire Line
+	7700 4350 7700 4250
+Wire Wire Line
+	7450 3050 7700 3050
+Wire Wire Line
+	7700 3050 7700 3150
+Wire Wire Line
+	7450 3350 7700 3350
+Wire Wire Line
+	7700 3350 7700 3250
+Text GLabel 6950 2500 1    50   Input ~ 0
+Vmotor
+Wire Wire Line
+	6950 2500 6950 3050
+Wire Wire Line
+	6950 4350 7150 4350
+Wire Wire Line
+	7150 4050 6950 4050
+Connection ~ 6950 4050
+Wire Wire Line
+	6950 4050 6950 4350
+Wire Wire Line
+	7150 3050 6950 3050
+Connection ~ 6950 3050
+Wire Wire Line
+	6950 3050 6950 3350
+Wire Wire Line
+	7150 3350 6950 3350
+Connection ~ 6950 3350
+Wire Wire Line
+	6950 3350 6950 4050
+Wire Wire Line
+	5550 1900 5350 1900
+Text Label 3550 5150 0    50   ~ 0
+EXT_5V
+Wire Wire Line
+	3550 5150 3850 5150
+$Comp
+L power:GND #PWR0104
+U 1 1 65D68573
+P 6150 4150
+F 0 "#PWR0104" H 6150 3900 50  0001 C CNN
+F 1 "GND" H 6155 3977 50  0000 C CNN
+F 2 "" H 6150 4150 50  0001 C CNN
+F 3 "" H 6150 4150 50  0001 C CNN
+	1    6150 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 4150 6150 3950
+Wire Wire Line
+	6150 3950 5450 3950
+Wire Wire Line
+	6150 3950 6150 3350
+Wire Wire Line
+	6150 3350 5450 3350
+Connection ~ 6150 3950
+Text Label 7450 3350 0    50   ~ 0
+M1_A
+Text Label 7450 3050 0    50   ~ 0
+M1_B
+Text Label 7450 4350 0    50   ~ 0
+M2_A
+$Comp
+L power:+3.3V #PWR0105
+U 1 1 65D6C01F
+P 3700 3150
+F 0 "#PWR0105" H 3700 3000 50  0001 C CNN
+F 1 "+3.3V" H 3715 3323 50  0000 C CNN
+F 2 "" H 3700 3150 50  0001 C CNN
+F 3 "" H 3700 3150 50  0001 C CNN
+	1    3700 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 3350 3700 3350
+$Comp
+L power:GND #PWR0106
+U 1 1 65D6E062
+P 3650 4800
+F 0 "#PWR0106" H 3650 4550 50  0001 C CNN
+F 1 "GND" H 3655 4627 50  0000 C CNN
+F 2 "" H 3650 4800 50  0001 C CNN
+F 3 "" H 3650 4800 50  0001 C CNN
+	1    3650 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 4650 3650 4650
+Wire Wire Line
+	3650 4650 3650 4800
+NoConn ~ 2500 3700
+NoConn ~ 2500 3600
+NoConn ~ 2500 3500
+NoConn ~ 2500 3400
+Wire Wire Line
+	2500 3400 2350 3400
+Wire Wire Line
+	2500 3500 2350 3500
+Wire Wire Line
+	2500 3600 2350 3600
+Wire Wire Line
+	2350 3700 2500 3700
+$Comp
+L power:GND #PWR0107
+U 1 1 65D7E1CE
+P 2900 3200
+F 0 "#PWR0107" H 2900 2950 50  0001 C CNN
+F 1 "GND" H 2905 3027 50  0000 C CNN
+F 2 "" H 2900 3200 50  0001 C CNN
+F 3 "" H 2900 3200 50  0001 C CNN
+	1    2900 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 3200 2900 3100
+Wire Wire Line
+	2900 3100 2350 3100
+$Comp
+L power:+3.3V #PWR0108
+U 1 1 65D80A60
+P 2500 2900
+F 0 "#PWR0108" H 2500 2750 50  0001 C CNN
+F 1 "+3.3V" H 2515 3073 50  0000 C CNN
+F 2 "" H 2500 2900 50  0001 C CNN
+F 3 "" H 2500 2900 50  0001 C CNN
+	1    2500 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 3000 2500 3000
+Wire Wire Line
+	2500 3000 2500 2900
+Wire Wire Line
+	2500 3200 2350 3200
+Wire Wire Line
+	2500 3300 2350 3300
+Text Label 3600 4050 0    50   ~ 0
+SCL
+Text Label 3600 3950 0    50   ~ 0
+SDA
+Wire Wire Line
+	3600 4050 3850 4050
+Wire Wire Line
+	3600 3950 3850 3950
+$Comp
+L Connector:Conn_01x04_Male J5
+U 1 1 65D8D016
+P 3250 4350
+F 0 "J5" H 3358 4631 50  0000 C CNN
+F 1 "Encoder_pins" H 3358 4540 50  0000 C CNN
+F 2 "PlacaPrincipal:Encoder_pins" H 3250 4350 50  0001 C CNN
+F 3 "~" H 3250 4350 50  0001 C CNN
+	1    3250 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 4250 3850 4250
+Wire Wire Line
+	3850 4350 3450 4350
+Wire Wire Line
+	3850 4450 3450 4450
+Wire Wire Line
+	3850 4550 3450 4550
+Wire Wire Line
+	5700 4050 5450 4050
+Wire Wire Line
+	5700 4150 5450 4150
+Wire Wire Line
+	5700 4250 5450 4250
+Wire Wire Line
+	5700 4350 5450 4350
+$Comp
+L Connector:Conn_01x04_Male J3
+U 1 1 65DA28EF
+P 2650 4350
+F 0 "J3" H 2758 4631 50  0000 C CNN
+F 1 "Encoder_pwr" H 2758 4540 50  0000 C CNN
+F 2 "PlacaPrincipal:Encoder_pwr" H 2650 4350 50  0001 C CNN
+F 3 "~" H 2650 4350 50  0001 C CNN
+	1    2650 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0109
+U 1 1 65DA3682
+P 3000 4150
+F 0 "#PWR0109" H 3000 4000 50  0001 C CNN
+F 1 "+3.3V" H 3015 4323 50  0000 C CNN
+F 2 "" H 3000 4150 50  0001 C CNN
+F 3 "" H 3000 4150 50  0001 C CNN
+	1    3000 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 4150 3000 4250
+Wire Wire Line
+	3000 4350 2850 4350
+Wire Wire Line
+	2850 4250 3000 4250
+Connection ~ 3000 4250
+Wire Wire Line
+	3000 4250 3000 4350
+$Comp
+L power:GND #PWR0110
+U 1 1 65DA9A20
+P 3000 4700
+F 0 "#PWR0110" H 3000 4450 50  0001 C CNN
+F 1 "GND" H 3005 4527 50  0000 C CNN
+F 2 "" H 3000 4700 50  0001 C CNN
+F 3 "" H 3000 4700 50  0001 C CNN
+	1    3000 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 4700 3000 4550
+Wire Wire Line
+	3000 4450 2850 4450
+Wire Wire Line
+	2850 4550 3000 4550
+Connection ~ 3000 4550
+Wire Wire Line
+	3000 4550 3000 4450
+$Comp
+L Connector:Conn_01x04_Male J1
+U 1 1 65DCFA44
+P 2000 5100
+F 0 "J1" H 2108 5381 50  0000 C CNN
+F 1 "HC_sr04" H 2108 5290 50  0000 C CNN
+F 2 "PlacaPrincipal:HC-sr04" H 2000 5100 50  0001 C CNN
+F 3 "~" H 2000 5100 50  0001 C CNN
+	1    2000 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0111
+U 1 1 65DD0215
+P 2350 4850
+F 0 "#PWR0111" H 2350 4700 50  0001 C CNN
+F 1 "+3.3V" H 2365 5023 50  0000 C CNN
+F 2 "" H 2350 4850 50  0001 C CNN
+F 3 "" H 2350 4850 50  0001 C CNN
+	1    2350 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 4850 2350 5000
+Wire Wire Line
+	2350 5000 2200 5000
+$Comp
+L power:GND #PWR0112
+U 1 1 65DD3FF9
+P 2350 5400
+F 0 "#PWR0112" H 2350 5150 50  0001 C CNN
+F 1 "GND" H 2355 5227 50  0000 C CNN
+F 2 "" H 2350 5400 50  0001 C CNN
+F 3 "" H 2350 5400 50  0001 C CNN
+	1    2350 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 5400 2350 5300
+Wire Wire Line
+	2350 5300 2200 5300
+Wire Wire Line
+	2350 5100 2200 5100
+Wire Wire Line
+	2350 5200 2200 5200
+Wire Wire Line
+	5700 4550 5450 4550
+Wire Wire Line
+	5700 4650 5450 4650
+$Comp
+L placa-principal-rescue:ESP32-DEVKITC-32D-ESP32-DEVKITC-32D U2
+U 1 1 65D6572F
+P 4650 4250
+F 0 "U2" H 4650 5417 50  0000 C CNN
+F 1 "ESP32-DEVKITC-32D" H 4650 5326 50  0000 C CNN
+F 2 "PlacaPrincipal:MODULE_ESP32-DEVKITC-32D" H 4650 4250 50  0001 L BNN
+F 3 "" H 4650 4250 50  0001 L BNN
+F 4 "Espressif Systems" H 4650 4250 50  0001 L BNN "MF"
+F 5 "N/A" H 4650 4250 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 6 "None" H 4650 4250 50  0001 L BNN "Package"
+F 7 "None" H 4650 4250 50  0001 L BNN "Price"
+F 8 "https://www.snapeda.com/parts/ESP32-DEVKITC-32D/Espressif+Systems/view-part/?ref=eda" H 4650 4250 50  0001 L BNN "Check_prices"
+F 9 "Manufacturer Recommendations" H 4650 4250 50  0001 L BNN "STANDARD"
+F 10 "V4" H 4650 4250 50  0001 L BNN "PARTREV"
+F 11 "https://www.snapeda.com/parts/ESP32-DEVKITC-32D/Espressif+Systems/view-part/?ref=snap" H 4650 4250 50  0001 L BNN "SnapEDA_Link"
+F 12 "ESP32-DEVKITC-32D" H 4650 4250 50  0001 L BNN "MP"
+F 13 "\\nWiFi Development Tools (802.11) ESP32 General Development Kit, ESP32-WROOM-32D on the board\\n" H 4650 4250 50  0001 L BNN "Description"
+F 14 "Espressif Systems" H 4650 4250 50  0001 L BNN "MANUFACTURER"
+F 15 "In Stock" H 4650 4250 50  0001 L BNN "Availability"
+F 16 "ESP32-DEVKITC-32D" H 4650 4250 50  0001 L BNN "SNAPEDA_PN"
+	1    4650 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J7
+U 1 1 65D50C32
+P 10100 4150
+F 0 "J7" H 10072 4032 50  0000 R CNN
+F 1 "Motor 2" H 10072 4123 50  0000 R CNN
+F 2 "PlacaPrincipal:Bornera(5,08mm)" H 10100 4150 50  0001 C CNN
+F 3 "~" H 10100 4150 50  0001 C CNN
+	1    10100 4150
+	-1   0    0    -1  
+$EndComp
+Text Label 7450 4050 0    50   ~ 0
+M2_B
+Wire Wire Line
+	3850 2350 3850 2300
+Connection ~ 3850 2300
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 65DFBC78
+P 4150 2250
+F 0 "#FLG0101" H 4150 2325 50  0001 C CNN
+F 1 "PWR_FLAG" H 4150 2423 50  0000 C CNN
+F 2 "" H 4150 2250 50  0001 C CNN
+F 3 "~" H 4150 2250 50  0001 C CNN
+	1    4150 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 2250 4150 2300
+Wire Wire Line
+	4150 2300 3850 2300
+Text Label 5700 4050 0    50   ~ 0
+M1_A
+Text Label 5700 4150 0    50   ~ 0
+M1_B
+Text Label 5700 4250 0    50   ~ 0
+M2_A
+Text Label 5700 4350 0    50   ~ 0
+M2_B
+Text Label 5700 4550 0    50   ~ 0
+Trig
+Text Label 5700 4650 0    50   ~ 0
+Echo
+Text Label 2350 5100 0    50   ~ 0
+Trig
+Text Label 2350 5200 0    50   ~ 0
+Echo
+Text Label 2500 3200 0    50   ~ 0
+SCL
+Text Label 2500 3300 0    50   ~ 0
+SDA
+NoConn ~ 3850 3450
+NoConn ~ 3850 3550
+NoConn ~ 3850 3650
+NoConn ~ 3850 3750
+NoConn ~ 3850 3850
+NoConn ~ 5450 3450
+NoConn ~ 5450 3550
+NoConn ~ 5450 3650
+NoConn ~ 5450 3750
+NoConn ~ 5450 3850
+NoConn ~ 5450 4450
+NoConn ~ 5450 4750
+NoConn ~ 5450 4850
+NoConn ~ 5450 4950
+NoConn ~ 5450 5050
+NoConn ~ 5450 5150
+NoConn ~ 3850 5050
+NoConn ~ 3850 4950
+NoConn ~ 3850 4850
+NoConn ~ 3850 4750
+NoConn ~ 3850 4150
+Text Label 5550 1900 0    50   ~ 0
+EXT_5V
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 65E5A907
+P 3450 3250
+F 0 "#FLG0102" H 3450 3325 50  0001 C CNN
+F 1 "PWR_FLAG" H 3450 3423 50  0000 C CNN
+F 2 "" H 3450 3250 50  0001 C CNN
+F 3 "~" H 3450 3250 50  0001 C CNN
+	1    3450 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3350 3700 3300
+Wire Wire Line
+	3450 3250 3450 3300
+Wire Wire Line
+	3450 3300 3700 3300
+Connection ~ 3700 3300
+Wire Wire Line
+	3700 3300 3700 3150
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 65E63D8A
+P 3050 1600
+F 0 "#FLG0103" H 3050 1675 50  0001 C CNN
+F 1 "PWR_FLAG" H 3050 1773 50  0000 C CNN
+F 2 "" H 3050 1600 50  0001 C CNN
+F 3 "~" H 3050 1600 50  0001 C CNN
+	1    3050 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 1600 3050 1900
+Connection ~ 3050 1900
+Wire Wire Line
+	3050 1900 3100 1900
+Wire Wire Line
+	3550 1900 3450 1900
+$Comp
+L power:PWR_FLAG #FLG0104
+U 1 1 65E6D520
+P 3450 1750
+F 0 "#FLG0104" H 3450 1825 50  0001 C CNN
+F 1 "PWR_FLAG" H 3450 1923 50  0000 C CNN
+F 2 "" H 3450 1750 50  0001 C CNN
+F 3 "~" H 3450 1750 50  0001 C CNN
+	1    3450 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 1750 3450 1900
+Connection ~ 3450 1900
+Wire Wire Line
+	3450 1900 3400 1900
+Wire Wire Line
+	4150 1900 4400 1900
+Text GLabel 4500 1400 2    50   Input ~ 0
+Vmotor
+Wire Wire Line
+	4500 1400 4400 1400
+Wire Wire Line
+	4400 1400 4400 1900
+Connection ~ 4400 1900
+Wire Wire Line
+	4400 1900 4750 1900
+$EndSCHEMATC

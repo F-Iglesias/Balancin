@@ -1,0 +1,6 @@
+(fp_lib_table
+  (lib (name Capacitor_SMD)(type KiCad)(uri "C:/Users/Francisco/Mis docs/Trabajo/Portfolio/Robot balancín/Archivos de Kicad/Kicad 5/Footprints/Capacitor_SMD.pretty")(options "")(descr ""))
+  (lib (name Resistor_SMD)(type KiCad)(uri "C:/Users/Francisco/Mis docs/Trabajo/Portfolio/Robot balancín/Archivos de Kicad/Kicad 5/Footprints/Resistor_SMD.pretty")(options "")(descr ""))
+  (lib (name TCST1103)(type KiCad)(uri "C:/Users/Francisco/Mis docs/Trabajo/Portfolio/Robot balancín/Archivos de Kicad/Kicad 5/Footprints/TCST1103.pretty")(options "")(descr ""))
+  (lib (name "tira de pines")(type KiCad)(uri "C:/Users/Francisco/Mis docs/Trabajo/Portfolio/Robot balancín/Archivos de Kicad/Kicad 5/Footprints/tira de pines.pretty")(options "")(descr ""))
+)

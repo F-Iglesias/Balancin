@@ -1,0 +1,10 @@
+(sym_lib_table
+  (lib (name ESP32-DEVKITC-32D)(type Legacy)(uri ${KIPRJMOD}/../../Símbolos/ESP32-DEVKITC-32D.lib)(options "")(descr ""))
+  (lib (name L9110S)(type Legacy)(uri ${KIPRJMOD}/../../Símbolos/L9110S.lib)(options "")(descr ""))
+  (lib (name placa-principal-rescue)(type Legacy)(uri "${KIPRJMOD}/placa principal-rescue.lib")(options "")(descr ""))
+  (lib (name Connector)(type Legacy)(uri ${KIPRJMOD}/../../Símbolos/Connector.lib)(options "")(descr ""))
+  (lib (name Device)(type Legacy)(uri ${KIPRJMOD}/../../Símbolos/Device.lib)(options "")(descr ""))
+  (lib (name Diode)(type Legacy)(uri ${KIPRJMOD}/../../Símbolos/Diode.lib)(options "")(descr ""))
+  (lib (name Regulator_Linear)(type Legacy)(uri ${KIPRJMOD}/../../Símbolos/Regulator_Linear.lib)(options "")(descr ""))
+  (lib (name power)(type Legacy)(uri "C:/Users/Francisco/Mis docs/Trabajo/Portfolio/Robot balancín/Archivos de Kicad/Kicad 5/Símbolos/power.lib")(options "")(descr ""))
+)

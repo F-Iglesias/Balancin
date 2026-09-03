@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name PlacaPrincipal)(type KiCad)(uri "${KIPRJMOD}/../../Librería de footprints/PlacaPrincipal.pretty")(options "")(descr ""))
+)

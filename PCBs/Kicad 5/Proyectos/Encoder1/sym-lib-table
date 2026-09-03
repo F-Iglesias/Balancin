@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name Isolator)(type Legacy)(uri "C:/Users/Francisco/Mis docs/Trabajo/Portfolio/Robot balancín/Archivos de Kicad/Kicad 5/Símbolos/Isolator.lib")(options "")(descr ""))
+  (lib (name Device)(type Legacy)(uri "C:/Users/Francisco/Mis docs/Trabajo/Portfolio/Robot balancín/Archivos de Kicad/Kicad 5/Símbolos/Device.lib")(options "")(descr ""))
+  (lib (name Connector)(type Legacy)(uri "C:/Users/Francisco/Mis docs/Trabajo/Portfolio/Robot balancín/Archivos de Kicad/Kicad 5/Símbolos/Connector.lib")(options "")(descr ""))
+  (lib (name power)(type Legacy)(uri "C:/Users/Francisco/Mis docs/Trabajo/Portfolio/Robot balancín/Archivos de Kicad/Kicad 5/Símbolos/power.lib")(options "")(descr ""))
+)

@@ -1,0 +1,13 @@
+{
+    "cmake.sourceDirectory": "C:/Users/Francisco/Mis docs/Trabajo/Portfolio/Robot balancín/Firmware/.pio/libdeps/esp32dev/Unity",
+    "files.associations": {
+        "array": "cpp",
+        "deque": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp",
+        "vector": "cpp",
+        "string_view": "cpp",
+        "initializer_list": "cpp"
+    }
+}
