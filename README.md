@@ -4,6 +4,7 @@ It balances itself with a PID control, measuring the angle
 
 ## Third and final prototype
 <img width="700" height="581" alt="image" src="https://github.com/user-attachments/assets/aa9b7909-8dcf-442b-bb74-f1579dd375b7" />
+
 You can see a video of the robot moving [here](https://www.youtube.com/watch?v=WksrDXhgYMs)
 
 ### Main board
